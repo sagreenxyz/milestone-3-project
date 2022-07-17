@@ -1,6 +1,8 @@
-const users = require('./gen-users.js')
+const users = require('./gen-users')
+const equipment = require('./gen-equipment')
 
-console.log(users(4))
+// console.log(users(4))
+console.log(equipment(4))
 
 
 // const { PrismaClient } = require('@prisma/client');
