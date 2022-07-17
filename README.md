@@ -1,7 +1,6 @@
 <div id="top"></div>
 
 [![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![LinkedIn Scott][linkedin-shield-scott]][linkedin-url-scott]
 [![LinkedIn Scott][linkedin-shield-braxton]][linkedin-url-braxton]
@@ -14,8 +13,6 @@
   <a href="https://github.com/sagreenxyz/milestone-3-project">
     <img src="images/logo.JPG" alt="Logo" width="80" height="80">
   </a>
-
-  <h3 align="center">iRent</h3>
 
   <p align="center">
     iRent is an app where users can view and order rental equipment for various types of projects!
