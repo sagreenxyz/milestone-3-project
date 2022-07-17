@@ -11,7 +11,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/sagreenxyz/milestone-3-project">
-    <img src="images/logo.JPG" alt="Logo" width="80" height="80">
+    <img src="images/rentlogo.JPG" alt="Logo" width="80" height="80">
   </a>
 
   <p align="center">
