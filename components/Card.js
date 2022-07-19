@@ -18,7 +18,7 @@ export default function Card(props) {
                 </Link>
                     <div className="px-6 py-4">
                         <div className="font-bold text-xl mb-2">{props.equipment.name}</div>
-                        <p className="text-sm text-gray-700 text-base">
+                        <p className="text-sm text-gray-700">
                             Manufacturer:  {props.equipment.manufacturer} <br />
                             Model:  {props.equipment.model} <br />
                             Price:  {props.equipment.price} <br />
