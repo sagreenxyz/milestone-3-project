@@ -118,25 +118,32 @@ iRent is an application that resembles a customer-facing website for a fictional
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+If you are running this locally follow the steps below:
 
-### Prerequisites
+First, run install the dependencies then seed a data base:
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+```bash
+npm install
+```
+Data for the app will need to be seeded to a PSQL database using the [Prisma][Prisma-url] ORM and configured in the .env file.
 
-### Installation
+Next, run the development server:
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-<!-- USAGE EXAMPLES -->
-## Usage
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed through the browser via their respective folder route e.g. http://localhost:3000/api/equipment can be edited in `pages/api/equipment`.
+
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+
+## Deploy on Vercel
+
+Deploy your Next.js app via the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme). The Next.js deployment documentation can be found [here](https://nextjs.org/docs/deployment)
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -144,9 +151,9 @@ This is an example of how to list things you need to use the software and how to
 If you have a suggestion that would make this better, please fork the repo and create a pull request.
 
 1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/NewFeature`)
+2. Create your Feature Branch (`git checkout -b "feature name"`)
 3. Commit your Changes (`git commit -m 'Add some NewFeature'`)
-4. Push to the Branch (`git push origin feature/NewFeature`)
+4. Push to the Branch (`git push origin main "feature name"`)
 5. Open a Pull Request
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -186,7 +193,7 @@ Use this space to list resources you find helpful and would like to give credit 
 * [Img Shields](https://shields.io)
 * [SWR](https://swr.vercel.app/)
 * [Othneildrew Best Readme](https://github.com/othneildrew/Best-README-Template)
-* [Creating a NextJS Shopping Cart](https://github.com/itsnitinr/nextjs-shopping-cart/tree/main/pages)
+* [Creating a NextJS Shopping Cart](https://github.com/itsnitinr/nextjs-shopping-cart)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
