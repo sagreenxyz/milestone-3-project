@@ -13,8 +13,8 @@ export default function equipmentCategory () {
     if (!data) return <div>Loading...</div>
     
     return (
-        <div>
-            <h1>Equipment Category: {equipment_category}</h1>
+        <div className="text-center">
+            <h1 className="font-bold text-3xl mb-2">{equipment_category}</h1>
             <div className="grid gap-4 grid-cols-4 ">
                 {data.map((item) => {
                     return (

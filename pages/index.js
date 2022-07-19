@@ -11,15 +11,16 @@ export default function Home() {
   if (!data) return <div>Loading...</div>
 
   return (
-    
-    <div className="bg-gray-300 inline-flex">
-      <div className="grid gap-4 grid-cols-4 ">
-        {data.map((item) => {
-          return (
-            <Card equipment={item}/>
-          )
-        })}
+    <>
+      <div className=" lg bg-gray-300 inline-flex">
+        <div className="grid gap-4 lg:grid-cols-4 sm:grid-cols-1">
+          {data.map((item) => {
+            return (
+              <Card equipment={item} />
+            )
+          })}
+        </div>
       </div>
-    </div>
+    </>
   )
 }

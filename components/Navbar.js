@@ -1,6 +1,13 @@
 import Link from "next/link"
+import { useSelector } from 'react-redux'
 
 export default function Navbar() {
+  const shop = useSelector((state) => state.shop);
+  
+  const getItemsCount = () => {
+    return shop.reduce((accumulator, item) => accumulator + item.quantity, 0);
+  };
+
   return (
     <div>
 
@@ -33,6 +40,9 @@ export default function Navbar() {
                   </Link>
                   <Link href="/About_Us">
                     <a class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About Us</a>
+                  </Link>
+                  <Link href="/cart">
+                    <p class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Cart ({getItemsCount()})</p>
                   </Link>
                 </div>
               </div>
@@ -70,18 +80,7 @@ export default function Navbar() {
         </div>
 
 
-        <div class="sm:hidden" id="mobile-menu">
-          <div class="px-2 pt-2 pb-3 space-y-1">
-
-            <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Dashboard</a>
-
-            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
-
-            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
-
-            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
-          </div>
-        </div>
+      
       </nav>
     </div>
   )
