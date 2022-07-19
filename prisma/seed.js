@@ -25,7 +25,7 @@ async function main() {
                             model: faker.datatype.string(5),
                             manufacturer: faker.name.lastName(),
                             price: faker.commerce.price(0, 200, 0, '$'),
-                            image: faker.image.city(),
+                            image: faker.image.cats(200,200,true),
                             category: categories[Math.floor(Math.random() * categories.length)],
                             isAvailable: false,
                             description: faker.lorem.lines(3),
