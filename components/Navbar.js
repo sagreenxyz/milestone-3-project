@@ -70,7 +70,15 @@ export default function Navbar() {
         </div>
 
 
-      
+        <div class="sm:hidden" id="mobile-menu">
+          <div class="px-2 pt-2 pb-3 space-y-1">
+
+            <a href="/" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Home</a>
+
+            <a href="/About_Us" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About us</a>
+
+          </div>
+        </div>
       </nav>
     </div>
   )
