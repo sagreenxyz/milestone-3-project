@@ -5,15 +5,15 @@ const prisma = new PrismaClient();
 
 const categories = [
     "Air Compressor And Air Tools",
-    "Heating, Venilation, And Air Conditioning",
-    "Lawn, Landscape, And Tree",
+    "Heating, Ventilation, And Air Conditioning",
+    "Lawn, Landscape, And Tree", "Concrete",
 ]
 
 async function main() {
     await prisma.equipment.deleteMany();
     await prisma.user.deleteMany();
 
-    for (let i=0; i<20; i++) {
+    for (let i=0; i<25; i++) {
         await prisma.user.create({
             data: {
                 email: `${faker.internet.email()}`,
@@ -25,7 +25,7 @@ async function main() {
                             model: faker.datatype.string(5),
                             manufacturer: faker.name.lastName(),
                             price: faker.commerce.price(0, 200, 0, '$'),
-                            image: faker.image.abstract(250, 250, true),
+                            image: faker.image.cats(200,200,true),
                             category: categories[Math.floor(Math.random() * categories.length)],
                             isAvailable: false,
                             description: faker.lorem.lines(3),
