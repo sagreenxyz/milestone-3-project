@@ -1,9 +1,11 @@
 import { prototype } from "events";
+import { useNavigate } from 'react-router-dom'
 
 
 export default function Card(props) {
+    //const navigate = useNavigate()
     return (
-        <div>
+        <div onClick={ navigate(`/${props.equipment.id}`)}>
             <div class="max-w-sm mx-auto rounded content-center text-center overflow-hidden shadow-lg">
                 <img class="mx-auto" style={{height: "250px",width:"250px",}} src={props.equipment.image} alt="Sunset in the mountains"></img>
                 <div class="px-6 py-4">
