@@ -21,12 +21,10 @@ module.exports = function equipment(count, userIds = []) {
             isAvailable: true,
             description: faker.lorem.lines(3),
             price: faker.commerce.price(0, 200, 0, '$'),
-            userId: null,
+            userId: userIds[Math.floor(Math.random() * userIds.length)],
         })
         i++
     }
-
-    // TODO:  implement real userIds in place of null for checked-out equipment.  Note that users must be of role, "USER".
 
     return result
 }
