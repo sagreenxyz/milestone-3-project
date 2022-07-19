@@ -186,6 +186,7 @@ Use this space to list resources you find helpful and would like to give credit 
 * [Img Shields](https://shields.io)
 * [SWR](https://swr.vercel.app/)
 * [Othneildrew Best Readme](https://github.com/othneildrew/Best-README-Template)
+* [Creating a NextJS Shopping Cart](https://github.com/itsnitinr/nextjs-shopping-cart/tree/main/pages)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
