@@ -91,13 +91,13 @@ iRent is an application that resembles a customer-facing website for a fictional
 
 | Path                  | Component                 | Purpose                                                                         |
 | --------------------- | ------------------------- | ------------------------------------------------------------------------------- |
-| /                     | `Home.js`                 | Home page                                                                       |
-| /sign-up              | `users/SignUpForm.js`     | Form for creating a new user                                                    |
-| /equipment               | `equipment/""`    | List of places                                                                  |
-| /equipment/new           | `equipment/""`  | Form for creating a new place                                                   |
-| /equipment/:id      | `equipment/""`  | Details of a place, including it's comments, and a form to create a new comment |
-| /equipment/:id/edit | `equipment/""` | Form for editing a place                                                        |
-| /category/:name     | `category/""`  |                                                                                   | 
+| /                     | `Home.js`                 | Home page, and all available equipment                                          |
+| /user/sign_up              | `user/sign_up.js`     | Form for creating a new user                                                   |
+| /equipment/new           | `equipment/"new.js"`  | Form for creating a new piece of equipment                                       |
+| /equipment/:id      | `equipment/"[equipment_id].js"`  | Details of a piece of equipment                                            |
+| /equipment/:id/edit | `equipment/""` | Form for editing a piece of equipment                                                        |
+| /category/:name     | `category/"[equipment_category].js"`  | list of equipment in a specific category                              | 
+| /About_Us           | `About_Us.js`  | information about the developers                                                             |
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
