@@ -13,7 +13,7 @@ async function main() {
     await prisma.equipment.deleteMany();
     await prisma.user.deleteMany();
 
-    for (let i=0; i<25; i++) {
+    for (let i=0; i<30; i++) {
         await prisma.user.create({
             data: {
                 email: `${faker.internet.email()}`,

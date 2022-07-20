@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* using tailwinds apply directive to create a new class */
+.cartDiv {
+    @apply font-bold text-xl mb-2 inline-block 
+}
+
+.cartP {
+    @apply text-sm text-gray-700 text-base inline-block ml-3
+}
