@@ -9,6 +9,12 @@ const categories = [
     "Lawn, Landscape, And Tree", "Concrete",
 ]
 
+const images = [
+    "https://loremflickr.com/200/200/cats",
+    "https://loremflickr.com/200/200/dog",
+    "https://loremflickr.com/200/200/food",
+]
+
 async function main() {
     await prisma.equipment.deleteMany();
     await prisma.user.deleteMany();
@@ -25,7 +31,7 @@ async function main() {
                             model: faker.datatype.string(5),
                             manufacturer: faker.name.lastName(),
                             price: faker.commerce.price(0, 200, 0, '$'),
-                            image: faker.image.cats(200,200,true),
+                            image: images[Math.floor(Math.random() * images.length)],
                             category: categories[Math.floor(Math.random() * categories.length)],
                             isAvailable: false,
                             description: faker.lorem.lines(3),
