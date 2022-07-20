@@ -28,13 +28,13 @@ const CartPage = () => {
                     <div className="cartDiv">Quantity: </div>
                     <p className="cartP">{item.quantity}</p>
                     <div>
-                      <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded' onClick={() => dispatch(incrementQty(item.id))}>
+                      <button className='dark:bg-gray-800 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-gray-700 rounded' onClick={() => dispatch(incrementQty(item.id))}>
                         +
                       </button>
-                      <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded' onClick={() => dispatch(decrementQty(item.id))}>
+                      <button className='dark:bg-gray-800 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-gray-700 rounded' onClick={() => dispatch(decrementQty(item.id))}>
                         -
                       </button>
-                      <button className='bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 border border-red-700 rounded' onClick={() => dispatch(removeItem(item.id))}>
+                      <button className='bg-orange-500 hover:bg-red-700 text-white font-bold py-2 px-4 border border-orange-700 rounded' onClick={() => dispatch(removeItem(item.id))}>
                         x
                       </button>
                     </div>
