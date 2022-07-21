@@ -13,7 +13,7 @@ const CartPage = () => {
             ) : (
                 <>
                 {shop.map((item) => (
-                  <div>
+                  <div key={item.id}>
                     <div>
                       <Image src={item.image} height="250" width="250" alt="item"/>
                     </div>
