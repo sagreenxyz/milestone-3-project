@@ -1,5 +1,6 @@
 import { PrismaClient } from '@prisma/client';
-import faker from "faker";
+// import faker from "faker";
+const faker = await import('faker')
 
 const prisma = new PrismaClient();
 
