@@ -2,6 +2,7 @@ import  Link  from 'next/link'
 import Image from "next/image"
 import { useDispatch } from 'react-redux';
 import { addItem } from '../redux/shop.slice'
+
 import { useRouter } from 'next/router'
 import { useState } from 'react'
 
