@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import useSWR from "swr";
 // import Card from '../../components/Card'
-import SingleCard from "../../components/SingleCard";
+import SingleCard from "../../components/singleCard";
 
 export default function Equipment_id() {
   const fetcher = (...args) => fetch(...args).then((res) => res.json());

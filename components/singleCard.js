@@ -7,7 +7,7 @@ import { useRouter } from 'next/router'
 import { useState } from 'react'
 
 
-export default function Card(props) {
+export default function SingleCard(props) {
     
     const dispatch = useDispatch()
     const router = useRouter()
