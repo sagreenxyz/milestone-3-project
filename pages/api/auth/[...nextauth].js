@@ -14,20 +14,20 @@ export default NextAuth({
     database: process.env.DATABASE_URL,
     secret: process.env.SECRET,
 
-    callbacks: {
-        session: async ({ session, token }) => {
-            if (session?.user) {
-                session.user.id = token.uid;
-            }
-            return session;
-          },
-          jwt: async ({ user, token }) => {
-              if (user) {
-                  token.uid = user.id;
-              }
-            return token;
-        },
-    },
+//     callbacks: {
+//         session: async ({ session, token }) => {
+//             if (session?.user) {
+//                 session.user.id = token.uid;
+//             }
+//             return session;
+//           },
+//           jwt: async ({ user, token }) => {
+//               if (user) {
+//                   token.uid = user.id;
+//               }
+//             return token;
+//         },
+//     },
     
     session: {
         jwt: true,
