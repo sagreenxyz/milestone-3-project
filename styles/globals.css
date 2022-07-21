@@ -10,3 +10,7 @@
 .cartP {
     @apply text-sm text-gray-700 text-base inline-block ml-3
 }
+
+.aboutDiv {
+    @apply font-bold text-lg hover:bg-sky-700
+}
