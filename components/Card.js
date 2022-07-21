@@ -1,5 +1,6 @@
 import { prototype } from "events";
 import  Link  from 'next/link'
+import Image from 'next/image'
 import { useDispatch } from 'react-redux';
 import { addItem } from '../redux/shop.slice'
 
@@ -14,7 +15,7 @@ export default function Card(props) {
 
                 <div className="max-w-sm mx-auto rounded content-center text-center overflow-hidden shadow-lg">
                 <Link href={`/equipment/${encodeURIComponent(props.equipment.id)}`}>
-                    <img className="mx-auto" style={{ height: "250px", width: "250px", }} src={props.equipment.image} alt="Sunset in the mountains"></img>
+                    <Image className="mx-auto" height='250px' width='250px' src={props.equipment.image} alt="Sunset in the mountains"></Image>
                 </Link>
                     <div className="px-6 py-4">
                         <div className="font-bold text-xl mb-2">{props.equipment.name}</div>
