@@ -1,4 +1,5 @@
 import  Link  from 'next/link'
+import Image from "next/image"
 import { useDispatch } from 'react-redux';
 import { addItem } from '../redux/shop.slice'
 import {useRouter} from 'next/router'
@@ -36,7 +37,7 @@ export default function Card(props) {
 
         <div>
                 <div className="max-w-sm mx-auto rounded content-center text-center overflow-hidden shadow-lg">
-                    <img className="mx-auto" style={{ height: "250px", width: "250px", }} src={props.equipment.image} alt="Sunset in the mountains"></img>
+                    <Image className="mx-auto" height="250px" width="250px" src={props.equipment.image} alt="Sunset in the mountains"></Image>
                     <div className="px-6 py-4">
                         <div className="font-bold text-xl mb-2">{props.equipment.name}</div>
                         <p className="text-sm text-gray-700">
