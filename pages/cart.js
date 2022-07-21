@@ -1,4 +1,4 @@
-
+import Image from "next/image"
 import { useSelector, useDispatch } from 'react-redux'
 import { incrementQty, decrementQty, removeItem } from '../redux/shop.slice'
 
@@ -15,7 +15,7 @@ const CartPage = () => {
                 {shop.map((item) => (
                   <div>
                     <div>
-                      <img src={item.image} height="250" width="250" />
+                      <Image src={item.image} height="250" width="250" alt="item"/>
                     </div>
                     <div className="cartDiv">Name: </div>
                     <p className="cartP">{item.name}</p> <br/>
