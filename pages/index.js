@@ -14,7 +14,7 @@ export default function Home() {
         <div className="grid gap-4 lg:grid-cols-4 sm:grid-cols-1">
           {data.map((item) => {
             return (
-              <Card equipment={item} />
+              <Card equipment={item} key={index} />
             )
           })}
         </div>
