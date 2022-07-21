@@ -2,8 +2,10 @@
 
 export default function About_Us () {
     return (
-        <div className="bg-gray-300 flex items-center px-10">
-            <p>Just three junior developers trying to make a name for ourselves.</p>
+        <div>
+            <div className="aboutDiv"><a href="https://www.linkedin.com/in/sagreenxyz/">Scott Green's Linked In</a></div>
+            <div className="aboutDiv"><a href="https://www.linkedin.com/in/bnallen/">Braxton Allen's Linked In</a></div>
+            <div className="aboutDiv"><a href="https://www.linkedin.com/in/benjamin-froehlich-934650a2/">Benjamin Froehlich's Linked In</a></div>
         </div>
     )
 }
