@@ -12,8 +12,8 @@ const CartPage = () => {
                 <div className="cartDiv">Your cart is empty.</div>
             ) : (
                 <>
-                {shop.map((item) => (
-                  <div>
+                {shop.map((item, index) => (
+                  <div key={index}>
                     <div>
                       <img src={item.image} height="250" width="250" />
                     </div>
