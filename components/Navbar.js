@@ -32,16 +32,16 @@ export default function Navbar() {
               <div className="hidden sm:block sm:ml-6">
                 <div className="flex space-x-4">
                   <Link href="/" >
-                    <p className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">Home</p>
+                    <p className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium hover:cursor-pointer">Home</p>
                   </Link>
                   <Link href="/About_Us" >
-                    <p className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About Us</p>
+                    <p className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium hover:cursor-pointer">About Us</p>
                   </Link>
                   <Link href="/cart">
-                    <p className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Cart ({getItemsCount()})</p>
+                    <p className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium hover:cursor-pointer">Cart ({getItemsCount()})</p>
                   </Link>
                   <Link href="/equipment/new">
-                    <p className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">New Equipment</p>
+                    <p className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium hover:cursor-pointer">New Equipment</p>
                   </Link>
                 </div>
               </div>
