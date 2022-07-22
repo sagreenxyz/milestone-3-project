@@ -1,7 +1,7 @@
 import { useState } from "react";
-import {useRouter} from 'next/router'
+import { useRouter } from "next/router";
 
-export default function new_equipment() {
+export default function New_Equipment() {
   const [name, setName] = useState("");
   const [manufacturer, setManufacturer] = useState("");
   const [model, setModel] = useState("");
@@ -9,10 +9,10 @@ export default function new_equipment() {
   const [price, setPrice] = useState("");
   const [description, setDescription] = useState("");
 
-  const router = useRouter()
+  const router = useRouter();
 
   const handleNew = async (e) => {
-    const body = {name, manufacturer, model, category, price, description };
+    const body = { name, manufacturer, model, category, price, description };
     await fetch(`/api/equipment/new`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -78,10 +78,16 @@ export default function new_equipment() {
             required
             size="3"
           >
-                <option value="Lawn, Landscape, and Tree">Lawn, Landscape, and Tree</option>
-                <option value="Air Compressor And Air Tools">Air Compressor And Air Tools</option>
-                <option value="Concrete">Concrete</option>
-                <option value="Heating, Ventilation, And Air Conditioning">Heating and Ventilation</option>
+            <option value="Lawn, Landscape, and Tree">
+              Lawn, Landscape, and Tree
+            </option>
+            <option value="Air Compressor And Air Tools">
+              Air Compressor And Air Tools
+            </option>
+            <option value="Concrete">Concrete</option>
+            <option value="Heating, Ventilation, And Air Conditioning">
+              Heating and Ventilation
+            </option>
           </select>
         </div>
         <div className="mb-4">

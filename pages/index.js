@@ -12,9 +12,9 @@ export default function Home() {
     <>
       <div className=" lg bg-gray-300 inline-flex">
         <div className="grid gap-4 lg:grid-cols-4 sm:grid-cols-1">
-          {data.map((item) => {
+          {data.map((item, index) => {
             return (
-              <Card equipment={item} />
+              <Card equipment={item} key={index} />
             )
           })}
         </div>

@@ -4,7 +4,7 @@ import Card from "../../components/Card"
 
 const fetcher = (...args) => fetch(...args).then(res => res.json())
 
-export default function equipmentCategory () {
+export default function EquipmentCategory () {
     
     const router = useRouter()
     const equipment_category = router.query.equipment_category
@@ -16,9 +16,9 @@ export default function equipmentCategory () {
         <div className="text-center">
             <h1 className="font-bold text-3xl mb-2">{equipment_category}</h1>
             <div className="grid gap-4 grid-cols-4 ">
-                {data.map((item) => {
+                {data.map((item, index) => {
                     return (
-                        <Card equipment={item}/>
+                        <Card equipment={item} key={index}/>
                     )
                 })}
             </div>
