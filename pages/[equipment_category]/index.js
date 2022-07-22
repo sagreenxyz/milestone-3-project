@@ -1,6 +1,6 @@
 import { useRouter } from "next/router"
 
-function equipment_category() {
+function Equipment_Category() {
     const router = useRouter()
     const category_id = router.query.equipment_category
     console.log(category_id)
@@ -10,4 +10,4 @@ function equipment_category() {
     )
 }
 
-export default equipment_category
+export default Equipment_Category
