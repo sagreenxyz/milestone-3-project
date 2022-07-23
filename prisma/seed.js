@@ -1,5 +1,5 @@
-import prisma from "../../../lib/prisma";
-import faker from "faker";
+const { PrismaClient } = require('@prisma/client');
+const faker = require("faker")
 
 const prisma = new PrismaClient();
 
