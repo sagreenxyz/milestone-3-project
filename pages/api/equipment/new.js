@@ -23,7 +23,7 @@ export default async function handler(req, res) {
         //       emailVerified: null,
         //       image: null,
         //   },
-          userId: "cl5t0vnz100398gsoxam1d7ds"
+          userId: "cl5t0vlyc00048gsocxwdqqw7"
         },
       });
       res.status(200).json(createdEquipment);

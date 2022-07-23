@@ -8,6 +8,4 @@ export default async function handler(req, res) {
     } catch (err) {
         res.status(500).json({error: 'could not find data'})
     }
-
-    // res.status(200).json({name:"Home equipment route"})
 }

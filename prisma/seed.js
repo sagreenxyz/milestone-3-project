@@ -1,4 +1,4 @@
-import { PrismaClient } from '@prisma/client';
+import prisma from "../../../lib/prisma";
 import faker from "faker";
 
 const prisma = new PrismaClient();
@@ -15,10 +15,12 @@ const images = [
     "https://loremflickr.com/200/200/food",
 ]
 
+//main seeder function
 async function main() {
+    //reset faker test data
     await prisma.equipment.deleteMany();
     await prisma.user.deleteMany();
-
+    //create new faker test data
     for (let i=0; i<30; i++) {
         await prisma.user.create({
             data: {
@@ -41,48 +43,8 @@ async function main() {
             },
         });
     }
-
-    // for (let i=0; i<2; i++) {
-    //     await prisma.equipment.create({
-    //         data: {
-    //                 name: faker.commerce.productName(),
-    //                 model: faker.random.numeric(5),
-    //                 manufacturer: faker.name.lastName(),
-    //                 price: faker.commerce.price(0, 200, 0, '$'),
-    //                 image: faker.image.abstract(480, 480, true),
-    //                 category: "Air Compressor And Air Tools",
-    //                 description: faker.lorem.lines(3),
-    //         },
-    //     });
-    // }
-    // for (let i=0; i<2; i++) {
-    //     await prisma.equipment.create({
-    //         data: {
-    //                 name: faker.commerce.productName(),
-    //                 model: faker.random.numeric(5),
-    //                 manufacturer: faker.name.lastName(),
-    //                 price: faker.commerce.price(0, 200, 0, '$'),
-    //                 image: faker.image.cats(480, 480, true),
-    //                 category: "Heating, Venilation, And Air Conditioning",
-    //                 description: faker.lorem.lines(3),
-    //         },
-    //     });
-    // }
-    // for (let i=0; i<2; i++) {
-    //     await prisma.equipment.create({
-    //         data: {
-    //                 name: faker.commerce.productName(),
-    //                 model: faker.random.numeric(5),
-    //                 manufacturer: faker.name.lastName(),
-    //                 price: faker.commerce.price(0, 200, 0, '$'),
-    //                 image: faker.image.image(480, 480, true),
-    //                 category: "Lawn, Landscape, And Tree",
-    //                 description: faker.lorem.lines(3),
-    //         },
-    //     });
-    // }
 }
-
+//error catch and disconnect from database
 main().catch (e => {
     console.error(e);
     process.exit(1);
