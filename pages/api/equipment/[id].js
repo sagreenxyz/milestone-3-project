@@ -25,7 +25,6 @@ export default async function handler(req, res) {
     res.status(200).json(updatedEquipment);
   } else if (req.method === "GET")
     try {
-      //findUnique not findOne
       const equipmentFound = await prisma.equipment.findUnique({
         where: { id: parseInt(id) },
       });
