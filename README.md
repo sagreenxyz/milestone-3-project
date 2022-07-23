@@ -81,7 +81,7 @@ iRent is an application that resembles a customer-facing website for a fictional
 | ------ | ------------------------------------ | ----------------------------------------- | -------------------   |       
 | GET    | /                                    | Home page                                 | user, employee, admin |
 | GET    | /equipment                           | Equipment index page                      | user, employee, admin               |
-| POST   | /equipment                           | Create new equipment                      |  employee, admin                    |
+| POST   | /equipment/new                           | Create new equipment                      |  employee, admin                    |
 | GET    | /equipment/:id                       | Details about a particular piece of equipment      | user, employee, admin      |
 | PUT    | /equipment/:id                       | Update a particular piece of equipment             | employee, admin            |
 | DELETE | /equipment/:id                       | Delete a particular piece of equipment             | employee, admin            |
@@ -120,7 +120,7 @@ iRent is an application that resembles a customer-facing website for a fictional
 
 If you are running this locally follow the steps below:
 
-First, run install the dependencies then seed a data base:
+First, install the dependencies then seed a data base:
 
 ```bash
 npm install
