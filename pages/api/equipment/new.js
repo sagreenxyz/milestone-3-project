@@ -29,6 +29,6 @@ export default async function handler(req, res) {
       res.status(200).json(createdEquipment);
     } catch (err) {
         console.log(err)
-      res.status(500).json({ error: `could not add equipment` });
+      res.status(500).json({ error: `could not add new equipment` });
     }
 }
