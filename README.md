@@ -120,7 +120,7 @@ iRent is an application that resembles a customer-facing website for a fictional
 
 If you are running this locally follow the steps below:
 
-First, run install the dependencies then seed a data base:
+First, install the dependencies then seed a data base:
 
 ```bash
 npm install
